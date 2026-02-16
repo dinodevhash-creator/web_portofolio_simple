@@ -1,0 +1,123 @@
+body{
+    display: flex;
+    flex-direction: row;
+}
+
+.intro{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    justify-content: center;
+    text-align: center;
+    padding: clamp(1rem, 3vw, 2rem) 0 0.5rem 0;
+}
+
+.intro img{
+    width: clamp(150px, 20vw, 250px);
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: clamp(1rem, 3vw, 2rem);
+    padding: clamp(1rem, 1vw, 1rem) 0 clamp(0.5rem, 1vw,0.5rem) 0;
+    margin-right: 1rem;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: clamp(1rem, 3vw, 2rem) 0 0.5rem 0;
+    background-color: #a6a6a6;
+}
+
+.about h2{
+    justify-content: center;
+    text-align: center;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-family: 'Open Sans', sans-serif;
+    color: #2e2e2e;
+}
+
+.about p{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    padding: clamp(0.5rem, 1vw, 1rem) 0 clamp(0.5rem, 1vw, 1rem) 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #2e2e2e;
+}
+
+.nyatu{
+    display: flex;
+    justify-content: left;
+    gap: 2rem;
+}
+
+.sosmed{
+    display: flex;
+    flex-direction: horizontal;
+    padding: clamp(0.5rem, 1vw, 1rem) 0 clamp(0.5rem, 1vw, 1rem) 0;
+    justify-content: left;
+    gap: 0.5rem;
+}
+
+.sosmed a{
+    text-decoration: none;
+}
+
+.nyatu #Resume{
+    padding: 5px 50px 5px 50px;
+    background-color: #2e2e2e;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    padding: clamp(0.5rem, 1vw, 1rem) 0 clamp(0.5rem, 1vw, 1rem) 0;
+    color: white;
+}
+
+.nyatu #porto{
+    padding: 5px 50px 5px 50px;
+    background-color: #2e2e2e;
+    font-family: 'Open Sans', sans-serif;
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    padding: clamp(0.5rem, 1vw, 1rem) 0 clamp(0.5rem, 1vw, 1rem) 0;
+    color: white;
+}
+
+.email{
+    display: flex;
+    flex-direction: horizontal;
+    padding: 5px 50px 5px 50px;
+    justify-content: center;
+    background-color: #2e2e2e;
+    
+}
+
+.email a{
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    color: white;
+}
+.intro h2, h3{
+    justify-content: center;
+    text-align: center;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-family: 'Open Sans', sans-serif;
+    color: #000000;
+}
+
+.job{
+    justify-content: center;
+    text-align: center;
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    font-family: 'Open Sans', sans-serif;
+    color: #000000;
+}
+
+@media (max-width: 768px) {
+    body{
+        flex-direction: column;
+    }
+}
